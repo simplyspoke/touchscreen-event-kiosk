@@ -1,0 +1,219 @@
+<!-- TODO: Add validations -->
+<md-content class="content-container md-padding">
+    <div class="img-bg-sm" style="overflow: hidden; position: relative;">
+        <img src="assets/images/canada-specs.jpg" alt="ONE Aviation" title="ONE Aviation" class="" style="width: 100%;">
+    </div>
+    <div id="550" class="col-xs-12">
+        <h1>Canada Jet Specifications</span>
+    </h1>
+</div>
+<md-content class="md-padding" layout="row">
+    <div flex="50">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2" class="spec-title">
+                        SPECIFICATIONS
+                        <md-button ng-click="vm.metricControl()" ng-show="vm.english" class="md-raised md-primary">Change to Metric
+                        </md-button>
+                        <md-button ng-click="vm.englishControl()" ng-show="!vm.english" class="md-raised md-primary">Change to English
+                        </md-button>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">TAKEOFF DISTANCE TO 50 FT @ MGTOW</td>
+                    <td ng-show="vm.english">2,400 FT</td>
+                    <td ng-show="!vm.english">732 M</td>
+                </tr>
+                <tr>
+                    <td>LANDING DIST. SEA LEVEL, ISA @
+                        <span ng-show="vm.english">4,600-LB
+                        </span>
+                        <span ng-show="!vm.english">2,087-KG</span>
+                    </td>
+                    <td ng-show="vm.english">2,880 FT</td>
+                    <td ng-show="!vm.english">878 M</td>
+                </tr>
+                <tr>
+                    <td>RATE OF CLIMB
+                        <sup>1</sup>
+                    </td>
+                    <td ng-show="vm.english">3,284 FT / MIN</td>
+                    <td ng-show="!vm.english">1,001 M / MIN</td>
+                </tr>
+                <tr>
+                    <td>TIME TO CLIMB -
+                        <span ng-show="vm.english">43,000 FT</span>
+                        <span ng-show="!vm.english">13,106 M</span>
+                    </td>
+                    <td ng-show="vm.english">27 MIN</td>
+                    <td ng-show="!vm.english">27 MIN</td>
+                </tr>
+                <tr>
+                    <td>MAX CRUISE SPEED - ISA, FL300, 6500lb</td>
+                    <td ng-show="vm.english">383 KT</td>
+                    <td ng-show="!vm.english">709 KM / HR</td>
+                </tr>
+                <tr>
+                    <td>MAXIMUM ALTITUDE</td>
+                    <td ng-show="vm.english">43,000 FT</td>
+                    <td ng-show="!vm.english">13,106 M</td>
+                </tr>
+                <tr>
+                    <td>RANGE - MAX
+                        <sup>2</sup>
+                    </td>
+                    <td ng-show="vm.english">
+                        1,400 NM</td>
+                    <td ng-show="!vm.english">
+                        2,592 KM</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <p class="small">
+            <sup>1</sup>
+            Flaps up, gear up, sea level, isa, max continuous power, MTOW<br>
+            <sup>2</sup>
+            NBAA IFR 100 NM Alternate, Pilot & 414lb Payload<br>
+        </p>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2">ENGINES
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">2 PRATT &amp; WHITNEY CANADA</td>
+                    <td>PW615F TURBOFANS</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TAKEOFF THRUST</td>
+                    <td ng-show="vm.english">1,170 LBF (EACH)</td>
+                    <td ng-show="!vm.english">
+                        5.204 KN (EACH)</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2">ACCOMMODATIONS</th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">SEATS</td>
+                    <td>6 MAX</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div flex="50">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2" class="spec-title">
+                        EXTERIOR DIMENSIONS
+                        <md-button ng-click="vm.metricControl()" ng-show="vm.english" class="md-raised md-primary">Change to Metric
+                        </md-button>
+                        <md-button ng-click="vm.englishControl()" ng-show="!vm.english" class="md-raised md-primary">Change to English
+                        </md-button>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">LENGTH</td>
+                    <td ng-show="vm.english">33.5 FT</td>
+                    <td ng-show="!vm.english">
+                        10.2 M
+                    </td>
+                </tr>
+                <tr>
+                    <td>WINGSPAN</td>
+                    <td ng-show="vm.english">37.9 FT</td>
+                    <td ng-show="!vm.english">
+                        11.6 M</td>
+                </tr>
+                <tr>
+                    <td>HEIGHT</td>
+                    <td ng-show="vm.english">11.0 FT</td>
+                    <td ng-show="!vm.english">
+                        3.4 M</td>
+                </tr>
+                <tr>
+                    <th colspan="2">INTERIOR DIMENSIONS
+                    </th>
+                </tr>
+                <tr>
+                    <td>LENGTH</td>
+                    <td ng-show="vm.english">148 IN</td>
+                    <td ng-show="!vm.english">
+                        376 CM</td>
+                </tr>
+                <tr>
+                    <td>HEIGHT (MAX)</td>
+                    <td ng-show="vm.english">50 IN</td>
+                    <td ng-show="!vm.english">
+                        127 CM</td>
+                </tr>
+                <tr>
+                    <td>WIDTH (MAX)</td>
+                    <td ng-show="vm.english">56 IN</td>
+                    <td ng-show="!vm.english">
+                        142 CM</td>
+                </tr>
+                <tr>
+                    <th colspan="2">WEIGHTS
+                    </th>
+                </tr>
+                <tr>
+                    <td>MAXIMUM RAMP</td>
+                    <td ng-show="vm.english">6,918 LB</td>
+                    <td ng-show="!vm.english">
+                        3,137 KG</td>
+                </tr>
+                <tr>
+                    <td>MAXIMUM TAKEOFF</td>
+                    <td ng-show="vm.english">6,884 LB</td>
+                    <td ng-show="!vm.english">
+                        3,122 KG</td>
+                </tr>
+                <tr>
+                    <td>MAXIMUM LANDING</td>
+                    <td ng-show="vm.english">6,400 LB</td>
+                    <td ng-show="!vm.english">
+                        2,902 KG</td>
+                </tr>
+                <tr>
+                    <td>EMPTY</td>
+                    <td ng-show="vm.english">4,131 LB</td>
+                    <td ng-show="!vm.english">
+                        1,873 KG</td>
+                </tr>
+                <tr>
+                    <td>FUEL CAPACITY</td>
+                    <td ng-show="vm.english">2173 LB / 321 GAL</td>
+                    <td ng-show="!vm.english">
+                        985 KG / 1,215 L</td>
+                </tr>
+                <tr>
+                    <td>USEFUL LOAD (Inc. Pilot)</td>
+                    <td ng-show="vm.english">2,787 LB</td>
+                    <td ng-show="!vm.english">
+                        1,264 KG</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</md-content>
+<md-content class="md-padding" layout="row">
+    <div flex="100">
+        <div class="spec-images">
+            <figure class="col-xs-12 col-sm-12"><img src="assets/images/canada-bottom-specs.jpg" class="img-responsive" alt="Canada Jet Dimensions"></figure>
+        </div>
+    </div>
+</md-content>
+</md-content>

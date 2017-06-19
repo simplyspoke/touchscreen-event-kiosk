@@ -1,0 +1,23 @@
+<div class=modal-body md-swipe-left=Lightbox.nextImage() md-swipe-right=Lightbox.prevImage()>
+    <div class=lightbox-image-caption>
+        <span>{{Lightbox.imageCaption}}</span>
+    </div>
+    <div class=lightbox-nav>
+        <button class=close aria-hidden=true ng-click=$dismiss()>×</button>
+    </div>
+    <div class=lightbox-image-container><img ng-if=!Lightbox.isVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}}>
+        <div ng-if=Lightbox.isVideo(Lightbox.image) class="embed-responsive embed-responsive-16by9">
+            <video flex layout="row" width="800px" autoplay>
+                <source src="{{Lightbox.imageUrl}}" type="video/mp4">
+            </video>
+        </div>
+        <div ng-if="Lightbox.images.length > 1">
+            <a class="btn btn-xs btn-default previous-button" ng-click=Lightbox.prevImage()>
+                <i class="material-icons">keyboard_arrow_left</i>
+            </a>
+            <a class="btn btn-xs btn-default next-button" ng-click=Lightbox.nextImage()>
+                <i class="material-icons">keyboard_arrow_right</i>
+            </a>
+        </div>
+    </div>
+</div>

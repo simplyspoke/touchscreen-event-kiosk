@@ -1,0 +1,3 @@
+[submodule "src/range-tool"]
+	path = src/range-tool
+	url = git@github.com:simplyspoke/flight-range-tool.git

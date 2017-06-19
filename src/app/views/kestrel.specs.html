@@ -1,0 +1,218 @@
+<!-- TODO: Add validations -->
+<md-content class="content-container md-padding">
+    <div class="img-bg-sm" style="overflow: hidden; position: relative;">
+        <img src="assets/images/kestrel-specs.jpg" alt="ONE Aviation" title="ONE Aviation" class="" style="width: 100%;">
+    </div>
+    <div id="550" class="col-xs-12">
+        <h1>The Kestrel 350:
+            <span>Performance Specifications</span>
+        </h1>
+    </div>
+<md-content class="md-padding" layout="row">
+    <div flex="50">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2" class="spec-title">
+                        SPECIFICATIONS
+                        <md-button ng-click="vm.metricControl()" ng-show="vm.english" class="md-raised md-primary">Change to Metric
+                        </md-button>
+                        <md-button ng-click="vm.englishControl()" ng-show="!vm.english" class="md-raised md-primary">Change to English
+                        </md-button>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">TAKEOFF DISTANCE TO 50 FT @ MGTOW</td>
+                    <td ng-show="vm.english">~2,500 FT</td>
+                    <td ng-show="!vm.english">~762 M</td>
+                </tr>
+                <tr>
+                    <td>LANDING DIST. SEA LEVEL, OVER 50 FT</td>
+                    <td ng-show="vm.english">~1,850 FT</td>
+                    <td ng-show="!vm.english">~564 M</td>
+                </tr>
+                <tr>
+                    <td>RATE OF CLIMB
+                    </td>
+                    <td ng-show="vm.english">&gt; 2,250 FT / MIN</td>
+                    <td ng-show="!vm.english">&gt;11.4 M / SEC</td>
+                </tr>
+
+                <tr>
+                    <td>MAXIMUM ALTITUDE</td>
+                    <td ng-show="vm.english">31,000 FT</td>
+                    <td ng-show="!vm.english">9,449 M</td>
+                </tr>
+                <tr>
+                    <td>RANGE - MAX
+                    </td>
+                    <td ng-show="vm.english">
+                        1,300 NM</td>
+                    <td ng-show="!vm.english">
+                        2,407 KM</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!--<table class="table">
+                <tr>
+                    <th colspan="2">ENGINE </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">HONEYWELL</td>
+                    <td>TPE331-14GR</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Flat Rate Power</td>
+                    <td ng-show="vm.english">1,000 SHP</td>
+                    <td ng-show="!vm.english">1,000 SHP</td>
+                </tr>
+            </table>-->
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2">PROPELLER
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">MANUFACTURER</td>
+                    <td>HARTZELL</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td class="col-xs-8">BLADES</td>
+                    <td>4</td>
+                    <td>COMPOSITE</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2">ACCOMMODATIONS</th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">SEATS</td>
+                    <td>6 STANDARD</td>
+                    <td>7-8 OPTIONAL</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div flex="50">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2" class="spec-title">
+                        EXTERIOR DIMENSIONS
+                        <md-button ng-click="vm.metricControl()" ng-show="vm.english" class="md-raised md-primary">Change to Metric
+                        </md-button>
+                        <md-button ng-click="vm.englishControl()" ng-show="!vm.english" class="md-raised md-primary">Change to English
+                        </md-button>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">LENGTH</td>
+                    <td ng-show="vm.english">38.5 FT</td>
+                    <td ng-show="!vm.english">
+                        11.7 M
+                    </td>
+                </tr>
+                <tr>
+                    <td>WINGSPAN</td>
+                    <td ng-show="vm.english">45 FT</td>
+                    <td ng-show="!vm.english">
+                        13.7 M</td>
+                </tr>
+                <tr>
+                    <td>HEIGHT</td>
+                    <td ng-show="vm.english">12.8 FT</td>
+                    <td ng-show="!vm.english">
+                        3.9 M</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2">INTERIOR DIMENSIONS
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">LENGTH</td>
+                    <td ng-show="vm.english">136 IN</td>
+                    <td ng-show="!vm.english">
+                        396 CM</td>
+                </tr>
+                <tr>
+                    <td>HEIGHT (MAX)</td>
+                    <td ng-show="vm.english">54 IN</td>
+                    <td ng-show="!vm.english">
+                        140 CM</td>
+                </tr>
+                <tr>
+                    <td>WIDTH (MAX)</td>
+                    <td ng-show="vm.english">60 IN</td>
+                    <td ng-show="!vm.english">
+                        150 CM</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th colspan="2">WEIGHTS
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-xs-8">MAXIMUM RAMP</td>
+                    <td ng-show="vm.english">8,920 LB</td>
+                    <td ng-show="!vm.english">
+                        4,046 KG</td>
+                </tr>
+                <tr>
+                    <td>MAXIMUM TAKEOFF</td>
+                    <td ng-show="vm.english">8,870 LB</td>
+                    <td ng-show="!vm.english">
+                        4,023 KG</td>
+                </tr>
+
+                <tr>
+                    <td>BASIC EMPTY</td>
+                    <td ng-show="vm.english">5,550 LB</td>
+                    <td ng-show="!vm.english">
+                        2,517 KG</td>
+                </tr>
+                <tr>
+                    <td>USEFUL LOAD (Inc. Pilot)</td>
+                    <td ng-show="vm.english">3,370 LB</td>
+                    <td ng-show="!vm.english">
+                        1,529 KG</td>
+                </tr>
+                <tr>
+                    <td>USEFUL LOAD FULL FUEL</td>
+                    <td ng-show="vm.english">1,200 LB</td>
+                    <td ng-show="!vm.english">
+                        544 KG</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</md-content>
+<md-content class="md-padding" layout="row">
+    <div flex="100">
+        <br class="clear">
+        <hr>
+        <p class="center">* All specifications are based on engineering projections and are subject to change.</p>
+        <br class="clear">
+    </div>
+</md-content>
+</md-content>

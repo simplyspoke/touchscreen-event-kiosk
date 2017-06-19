@@ -1,0 +1,19 @@
+<!-- TODO: Add validations -->
+<md-content class="md-padding" layout="row" layout-align="center center">
+    <img src="assets/images/kestrel-logo.png" height="100px"/>
+</md-content>
+<md-content class="md-padding gallery gallery1" layout="row" layout-align="center center" layout-wrap>
+    <md-card flex="30" ng-repeat="photo in vm.photos" ng-click="vm.openLightboxModal($index)">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{photo.caption}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-media class="md-padding">
+            <img src="{{photo.thumbUrl}}"/>
+        </md-card-media>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button>Enlarge</md-button>
+        </md-card-actions>
+    </md-card>
+</md-content>
